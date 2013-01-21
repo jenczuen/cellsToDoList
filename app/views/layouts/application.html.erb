@@ -8,6 +8,12 @@
 </head>
 <body>
 
+<div id="header">
+  <%= render_cell :TasksList, :display, :tasks_list => @current_tasks_list %>
+  <%= render_cell :CreateTask, :display, :taks => @current_task %>
+  <%= render_cell :UpdateTask, :display, :taks => @current_task %>
+</div>
+
 <%= yield %>
 
 </body>
