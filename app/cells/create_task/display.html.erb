@@ -1,8 +1,13 @@
-<h1>
-  CreateTask#display
-</h1>
+<div class="brick" id="create">
 
-<p>
-	@tasks_list
-  Find me in app/cells/create_task/display.html.erb
-</p>
+	<h1>Create new task:</h1>
+
+	<%= form_for @task do |f| %>
+		<%= f.label "Title", :class => "title" %> <br>
+		<%= f.text_field :title, :size => 20, :class => "input" %> <br>
+		<%= f.label "Content", :class => "title" %> <br>
+		<%= f.text_field :body, :size => 20, :class => "input" %> <br>
+		<%= f.submit "Create", :id => "button"  %>
+	<% end %>
+
+</div>

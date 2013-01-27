@@ -1,7 +1,13 @@
-<h1>
-  UpdateTask#display
-</h1>
+<div class="brick" id="update">
 
-<p>
-  Find me in app/cells/update_task/display.html.erb
-</p>
+	<h1>Edit task:</h1>
+
+	<%= form_for @task do |f| %>
+		<%= f.label "Title", :class => "title" %> <br>
+		<%= f.text_field :title, :size => 20, :class => "input" %> <br>
+		<%= f.label "Content", :class => "title" %> <br>
+		<%= f.text_field :body, :size => 20, :class => "input" %> <br>
+		<%= f.submit "Update", :id => "button" %>
+	<% end %>
+
+</div>

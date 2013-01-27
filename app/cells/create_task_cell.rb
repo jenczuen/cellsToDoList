@@ -1,9 +1,9 @@
 class CreateTaskCell < Cell::Rails
 
-  def display(args)
-    @tasks_list = args[:tasks_list]
+	def display(args)
+		@task = args[:task]
 
-    render  # renders display.html.haml
-  end
+		render
+	end
 
 end
