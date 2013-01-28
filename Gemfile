@@ -4,9 +4,9 @@ gem 'rails', '3.2.9'
 gem 'jquery-rails'
 gem 'cells', "~>3.5"
 
-#group :development do
-  gem 'sqlite3'
-#end
+group :development do
+ gem 'sqlite3'
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
